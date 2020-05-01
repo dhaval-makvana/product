@@ -1,0 +1,163 @@
+@import "../../components/defines.scss";
+
+.page {
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+}
+
+.container {
+  margin: 3rem;
+}
+
+.product {
+  overflow: auto;
+
+  @include lg {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.preview {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90rem;
+
+  @include lg {
+    height: 70rem;
+    flex-basis: 50%;
+  }
+}
+
+.imageContainer {
+  height: 70rem;
+
+  @include lg {
+    height: 60rem;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  height: 8rem;
+
+  @include lg {
+    height: 6rem;
+    padding: 1.4rem;
+  }
+
+  button {
+    height: 8rem;
+    width: 20rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    font-size: 3rem;
+    outline: none;
+    cursor: pointer;
+
+    @include lg {
+      height: 5rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+.description {
+  width: 100%;
+  padding: 2rem;
+
+  @include lg {
+    flex-basis: 50%;
+  }
+
+  .title {
+    font-size: 6rem;
+    letter-spacing: 2px;
+
+    @include lg {
+      font-size: 4rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  .subTitle {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    opacity: .8;
+
+    @include lg {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  .pricing {
+    margin: 2rem 0;
+    font-size: 3rem;
+
+    @include lg {
+      font-size: 1.4rem;
+    }
+
+    .discountedPrice {
+      text-decoration: line-through;
+    }
+
+    .price {
+      font-size: 3.4rem;
+      font-weight: 600;
+
+      @include lg {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .sizeContainer {
+    width: 100%;
+    font-size: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include lg {
+      font-size: 2.4rem;
+    }
+
+    .size {
+      border: 1px solid black;
+      color: white;
+      background-color: orange;
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      border-radius: 3px;
+
+      @include lg {
+        margin: 1.8rem;
+        widht: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}

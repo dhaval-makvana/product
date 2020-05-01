@@ -1,0 +1,89 @@
+@import "../defines.scss";
+
+.card {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f9;
+  height: 75rem;
+  width: 44rem;
+  padding: 2rem;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include md {
+    height: 33rem;
+    width: 22rem;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  @include lg {
+    width: 35rem;
+    height: 49rem;
+    padding: 3rem;
+    margin: auto;
+  }
+}
+
+.preview {
+  width: 40rem;
+  height: 53rem;
+  background-color: lightblue;
+
+  img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+  }
+
+  @include md {
+    width: 20rem;
+    height: 26rem;
+  }
+
+  @include lg {
+    width: 28rem;
+    height: 37rem;
+  }
+
+  @include xl {
+    width: 28rem;
+    height: 37rem;
+  }
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include md {
+    font-size: 2rem;
+    margin: .4rem 0;
+  }
+
+  @include lg {
+    font-size: 3rem;
+    margin: .4rem 0;
+  }
+}
+
+.description, .size {
+  font-size: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include md {
+    font-size: 1.6rem;
+  }
+
+  @include lg {
+    font-size: 2rem;
+  }
+}
